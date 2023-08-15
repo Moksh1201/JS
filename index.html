@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.js">
+    <title>Deakin Premium</title>
+    <style>
+    body {
+        justify-content: center;
+        padding-top: 25%;
+        padding-left: 30%;
+        margin: auto; 
+}
+
+.container {
+    justify-content: center;
+    max-width: 500px;
+    padding: 50px 40px;
+    background-color: rgba(188, 170, 170, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+p {
+    font-size: 18px;
+    padding: 2px;
+    color: #253f41;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3c3e;
+    padding-right: 210px;
+    width: 100%; 
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 4ch solid #c68181;
+    border-radius: 2%;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #b2cbf0;
+    color: #0c0c0b;
+    border: 2px solid #42f5b6;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+
+}
+
+button:hover {
+    background-color: #1e7cd5;
+    color: #050a0c;
+    transform: translateY(-2px);
+  }
+  
+  /* Active state */
+  button:active {
+    background-color: #17e72f;
+    color: #3c26a0;
+    transform: translateY(1px);
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pic1.png" alt="">
+        <h1>Welcome to Premium verion of Deakin!</h1>
+        <p>Sign up below for latest reminder and information</p>
+        
+        <form id = 'myform' action='/' method='post'>
+            <label for="emailID">Your Email: </label>
+
+            <input type="emailID" id="emailID" name="emailID" placeholder="abcd@gmail.com" required>
+
+            <button type="Apply">Apply</button>
+        </form>
+        
+    </div>
+    
+  
+</body>
+</html>
